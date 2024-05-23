@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ScopeGrade Dashboard</title>
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<input type="checkbox" id="toggle" class="menu-toggle" />
+	<header>
+  		<label for="toggle" class="logo">☰ scopegrade</label>
+	</header>
+
+<aside>
+  <div id="welcomeMessage" class="welcome-message">
+    <p>Welcome to ScopeGrade!<br><br>Click on one of your courses to the right, or on the Account menu below.</p>
+	<nav class="account-menu">
+    <ul>
+      <li tabindex="0" class="account-tab">Account <img src="black-big-gear-png-transparent.png" width="15" height="15" alt=""/>
+	<ul class="dropdown">
+  <li><a href="#">Help</a></li>
+  <li><a href="#">Edit Account</a></li>
+  <li><a href="#">Log Out</a></li>
+</ul>
+      </li>
+    </ul>
+  </nav>
+  </div>
+</aside>
+
+<main>
+  <section class="courses">
+    <h2>Your Courses</h2>
+    <article class="course spring">
+      <h3>Spring 2024</h3>
+      <p><a href="midterm2.html">CSCI 235 Software Design and Analysis II</a></p>
+      <p>06 assignments</p>
+      <button class="add-course">+Add a course</button>
+    </article>
+    
+    <article class="course fall">
+      <h3>Fall 2022</h3>
+      <div class="course-detail">
+        <p><a href="midterm3.html">CSCI 135 FALL 2022 SOFTWARE ANALYSIS AND DESIGN</a></p>
+        <p>08 assignments</p>
+      </div>
+      <div class="course-detail">
+        <p><a href="midterm3.html">Psych 100.08 Intro to Psych</a></p>
+        <p>20 assignments</p>
+      </div>
+      <button class="add-course">+Add Course</button>
+    </article>
+  </section>
+</main>
+
+</body>
+</html>

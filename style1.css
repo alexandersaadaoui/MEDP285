@@ -1,0 +1,147 @@
+body{
+  font-family: 'Verdana',sans-serif;
+  margin: 0; 
+  padding: 0; 
+  background-color: #f6f6f6; 
+}
+
+header{
+  background-color: #2752FF; 
+  color: darkblue; 
+  padding: 1em; 
+  text-align: left; 
+  font-size: 1.5em;
+}
+
+main {
+  margin-left: 50px; 
+  padding: 2em; 
+}
+
+.courses{
+  background-color: white; 
+  padding: 1em; 
+  margin-bottom: 1em; 
+}
+
+.course{
+  background-color: #738FFF; 
+  margin-bottom: 1em; 
+  padding: 1em; 
+  border-radius: 5px; 
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,0.4);
+}
+
+.course h3{
+  margin-top: 0;
+}
+
+.course-detail:not(:last-child){
+  border-bottom: 1px solid #a5d6a7; 
+  padding-bottom: 1em; 
+  margin-bottom: 1em;
+}
+
+.add-course{
+  background-color: #2752FF; 
+  color: white; 
+  padding: 0.5em 1em; 
+  text-align: center; 
+  display: inline-block; 
+  margin-top: 0em; 
+  cursor: pointer;
+  border: none; 
+  border-radius: 5px; 
+  transition: background-color 0.3s; 
+}
+
+.add-course:hover{
+  background-color: darkblue; 
+}
+
+
+aside{
+  background-color: #738FFF; 
+  padding: 1em; 
+  position: absolute; 
+  width: 260px; 
+  height: 150%; 
+  box-sizing: border-box; 
+  left: -250px; 
+  transition: left 0.5s ease-in-out; 
+}
+
+.welcome-message{
+  margin-bottom: 3em; 
+}
+
+.menu-toggle{
+  display: none;
+}
+
+.logo{
+  cursor: pointer; 
+}
+
+.welcome-message{
+  position: absolute; 
+  width: 200px;
+  transition: left 0.5s ease-in-out; 
+}
+
+.courses{
+  transition: margin-left 0.5s ease-in-out;
+}
+
+.menu-toggle:checked ~ aside{
+  left: 0; 
+}
+
+.menu-toggle:checked ~ aside .welcome-message{
+  left: 50;
+}
+
+.menu-toggle:checked ~ main .courses{
+  margin-left: 250px;
+}
+
+.account-menu{
+  position: relative; 
+  bottom: 0; 
+  left: 0; 
+  width: 200px;
+}
+
+.account-menu ul{
+  list-style-type: none; 
+  margin: 0;
+  padding: 0; 
+}
+
+.account-tab{
+  position: relative; 
+  cursor: pointer; 
+}
+
+.dropdown{
+  display: none;
+  position: relative; 
+  background-color: #f9f9f9; 
+  bottom: 100%; 
+}
+
+.dropdown a{
+  color: darkblue; 
+  padding: 10px 14px; 
+  text-decoration: none; 
+  display: block; 
+}
+
+.account-tab:hover .dropdown,
+.account-tab:focus-within .dropdown{
+  display: block;
+}
+
+.dropdown a:hover{
+  background-color: #f2f2f2;
+}
